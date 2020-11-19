@@ -58,6 +58,21 @@ html{
     grid-area:fear3 ;
 }
 
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 600px 250px 250px;
+        grid-template-areas: 
+        "head head"
+        "con con"
+        "sigh fear1"
+        "fear2 fear3"
+        ;
+
+    }
+}
+
+
 @media (max-width: 550px) {
     .container {
         grid-template-columns: 1fr;
@@ -70,19 +85,5 @@ html{
         "fear3"
         ;
         grid-template-rows: 360px 600px 300px 250px 250px 205px 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 600px 250px 250px;
-        grid-template-areas: 
-        "head head"
-        "con con"
-        "sigh fear1"
-        "fear2 fear3"
-        ;
-
     }
 }
